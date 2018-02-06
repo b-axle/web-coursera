@@ -1,84 +1,110 @@
-/***** Base Styles ****/
-*{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #197463;
+  font-family: 'Oxygen', sans-serif;
 }
 
-h1{
-	text-align: center;
-	margin: 30px;
-	font-size: 24;
-}
-section > div {
-	margin: 15px;
-	border: 1px solid black;
-	width: calc(100% - 30px);
-	height:150px;
-  	font-family: Helvetica;
-  	overflow: auto;
-}
-div > div {
-	position: relative;
-	text-align: center;
-	font-weight: bold;
-	width: 100px;
-	height:20px;
-	border: 1px solid black;
-	float: right;
-	color: white;
-	font-size:17;
-
-}
-p{		
-	margin: 10px;
-	float: right;
-	font-size:13;
-}
-#Chicken{
-	background-color: #205a8f;
-}
-#Beef{
-	background-color: #ff4242;
-}
-#Sushi{
-	background-color: #1a9c99;
-}
-#s1{
-	background-color: #ddebff;
-}
-#s2{
-	background-color: #fbc8ca;
-}
-#s3{
-	background-color: #aed8cf;
+/** HEADER **/
+#header-nav {
+  background-color: #F2A838;
+  border-radius: 0;
+  border: 0;
 }
 
-/***** Large devices only ****/
-@media (min-width: 992px){
-	#s1 {
-		width: calc(33.33% - 30px);
-		float: left;
-	}
-	#s2 {
-		width: calc(33.33% - 30px);
-		float: left;
-	}
-	#s3 {
-		width: calc(33.33% - 30px);
-		float: left;	
-	}
+.navbar-brand {
+  padding-top: 25px;
+  margin-bottom: 15px;
 }
 
-/**** Medium devices only ****/
-@media (max-width: 991px) and (min-width: 768px){
-	#s1{
-		width: calc(50% - 30px);
-		float: left;
-	}
-	#s2{
-		width: calc(50% - 30px);
-		float: left;
-	}
-
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #9D432B;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
 }
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list a {
+  color: #F2A838;
+  text-align: center;
+  background-color: #9D432B;
+}
+#nav-list a:hover {
+  background: #325352;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #325352;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -47px;
+}
+}
+/* END HEADER */
+
+/* HOME PAGE */
+
+.container {
+  box-shadow: 0 0 10px #fff;
+  border: 2px solid #325352;
+}
+.container h2 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+}
+
+#Chicken, #Beef, #Sushi {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #325352;
+  background-color: #fff;
+  overflow: auto;
+  color: #325352;
+}
+#Chicken:hover, #Beef:hover, #Sushi:hover {
+  box-shadow: 0 1px 5px 1px #325352;
+}
+
+#Chicken span, #Beef span, #Sushi span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+}
+
+#Chicken p, #Beef p, #Sushi p {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+/* END HOME PAGE */
+
+/*
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolere malum est: in crucem qui agitur, beatus esse non potest. Atqui eorum nihil est eius generis, ut sit in fine atque extrerno bonorum. Quodsi Graeci leguntur a Graecis isdem de rebus alia ratione compositis, quid est, cur nostri a nostris non legantur? Isto modo ne improbos quidem, si essent boni viri. Qui enim voluptatem ipsam contemnunt, iis licet dicere se acupenserem maenae non anteponere. Duo Reges: constructio interrete. Non igitur potestis voluptate omnia dirigentes aut tueri aut retinere virtutem. Sed hoc summum bonum, quod tertia significatione intellegitur, eaque vita, quae ex summo bono degitur, quia coniuncta ei virtus est. Claudii libidini, qui tum erat summo ne imperio, dederetur. Sed venio ad inconstantiae crimen, ne saepius dicas me aberrare;
+
+          Virtutibus igitur rectissime mihi videris et ad consuetudinem nostrae orationis vitia posuisse contraria. Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem. Sin eam, quam Hieronymus, ne fecisset idem, ut voluptatem illam Aristippi in prima commendatione poneret. Quid in isto egregio tuo officio et tanta fide-sic enim existimo-ad corpus refers? Quid ergo dubitamus, quin, si non dolere voluptas sit summa, non esse in voluptate dolor sit maximus? Nam et a te perfici istam disputationem volo, nec tua mihi oratio longa videri potest. Quid, si efficio ut fateare me non modo quid sit voluptas scire-est enim iucundus motus in sensu-, sed etiam quid eam tu velis esse? Aliud est enim poëtarum more verba fundere, aliud ea, quae dicas, ratione et arte distinguere. Non ego tecum iam ita iocabor, ut isdem his de rebus, cum L. Illis videtur, qui illud non dubitant bonum dicere -; In parvis enim saepe, qui nihil eorum cogitant, si quando iis ludentes minamur praecipitaturos alicunde, extimescunt. Aliis esse maiora, illud dubium, ad id, quod summum bonum dicitis, ecquaenam possit fieri accessio. An me, inquam, nisi te audire vellem, censes haec dicturum fuisse? Sit ista in Graecorum levitate perversitas, qui maledictis insectantur eos, a quibus de veritate dissentiunt.
+
+          His enim rebus detractis negat se reperire in asotorum vita quod reprehendat. Voluptatem cum summum bonum diceret, primum in eo ipso parum vidit, deinde hoc quoque alienum; Tum ille: Tu autem cum ipse tantum librorum habeas, quos hic tandem requiris? At quanta conantur! Mundum hunc omnem oppidum esse nostrum! Incendi igitur eos, qui audiunt, vides. In ipsa enim parum magna vis inest, ut quam optime se habere possit, si nulla cultura adhibeatur. Amicitiam autem adhibendam esse censent, quia sit ex eo genere, quae prosunt. Vides igitur, si amicitiam sua caritate metiare, nihil esse praestantius, sin emolumento, summas familiaritates praediorum fructuosorum mercede superari. Quodsi vultum tibi, si incessum fingeres, quo gravior viderere, non esses tui similis; Atque adhuc ea dixi, causa cur Zenoni non fuisset, quam ob rem a superiorum auctoritate discederet. Tum Lucius: Mihi vero ista valde probata sunt, quod item fratri puto. Nec enim, dum metuit, iustus est, et certe, si metuere destiterit, non erit;
+
+          Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Ita relinquet duas, de quibus etiam atque etiam consideret. Nam cum Academicis incerta luctatio est, qui nihil affirmant et quasi desperata cognitione certi id sequi volunt, quodcumque veri simile videatur. Quas enim kakaw Graeci appellant, vitia malo quam malitias nominare. Ita enim se Athenis collocavit, ut sit paene unus ex Atticis, ut id etiam cognomen videatur habiturus. Nec vero alia sunt quaerenda contra Carneadeam illam sententiam. Vide, ne etiam menses! nisi forte eum dicis, qui, simul atque arripuit, interficit. Vitiosum est enim in dividendo partem in genere numerare.
+
+          Est autem etiam actio quaedam corporis, quae motus et status naturae congruentis tenet; E quo efficitur, non ut nos non intellegamus quae vis sit istius verbi, sed ut ille suo more loquatur, nostrum neglegat. Idemne potest esse dies saepius, qui semel fuit? Quia dolori non voluptas contraria est, sed doloris privatio. Eaedem res maneant alio modo. Omnes, qui non sint sapientes, aeque miseros esse, sapientes omnes summe beatos, recte facta omnia aequalia, omnia peccata paria; Hi autem ponunt illi quidem prima naturae, sed ea seiungunt a finibus et a summa bonorum; Quid, si non modo utilitatem tibi nullam afferet, sed iacturae rei familiaris erunt faciendae, labores suscipiendi, adeundum vitae periculum? Quae quo sunt excelsiores, eo dant clariora indicia naturae. Manebit ergo amicitia tam diu, quam diu sequetur utilitas, et, si utilitas amicitiam constituet, tollet eadem.
+         </p>
+*/
